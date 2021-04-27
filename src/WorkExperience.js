@@ -19,80 +19,33 @@ function WorkExperience() {
       }}
     >
       <Nav />
-      <div
+      <h1
         style={{
+          display: "flex",
+          justifyContent: "center",
           color: "white",
-
-          verticalAlign: "middle",
         }}
-      >
-        <h1
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            color: "white",
-          }}
-        >
-          Software Developer Intern
-        </h1>
-        <Row>
-          <Col
-            style={{
-              color: "white",
-              justifyContent: "Left",
-              textAlign: "Left",
-              verticalAlign: "middle",
-            }}
-          >
-            <h5>Openjaw Technologies</h5>
-          </Col>
-          <Col
-            style={{
-              color: "white",
-              justifyContent: "right",
-              textAlign: "right",
-              verticalAlign: "middle",
-            }}
-          >
-            <h5>Janurary 2020</h5>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h5>Ballybrit, Co. Galway</h5>
-          </Col>
-          <Col
-            style={{
-              color: "white",
-              justifyContent: "right",
-              textAlign: "right",
-              verticalAlign: "middle",
-            }}
-          >
-            {" "}
-            <h5>April 2020</h5>
-          </Col>
-        </Row>
-        <div
-          style={{
-            justifyContent: "center",
-            color: "white",
-          }}
-        >
-          <p>
-            {" "}
+      ></h1>
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body">
+          <h4 class="card-title">Software Developer Intern</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Openjaw Technologies</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            January 2020 - April 2020
+          </h6>
+          <p class="card-text">
             • Developed frontend and backend software solutions as part of an
             agile team working to create an AI chatbot for use within the
             aviation industry
           </p>
-          <p>
+          <p class="card-text">
             • Developed unit tests for Java using the Junit framework, as well
             as implementing rigorous regression testing procedures
-          </p>{" "}
-          <p>
+          </p>
+          <p class="card-text">
             • Participated in weekly planning meetings, and bi-weekly
             retrospective meetings to plan the future progression of the
-            product, and solve problems as they appeared.
+            product, and solve problems as they appeared
           </p>
         </div>
       </div>

@@ -18,6 +18,13 @@ function AboutMe() {
       }}
     >
       <Nav />
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          color: "white",
+        }}
+      ></h1>
       <div
         style={{
           color: "white",
