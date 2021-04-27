@@ -1,45 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Nav() {
+const Nav = (props) => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button
-        class="navbar-toggler"
+        class="custom-toggler navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
+        data-target="#navbarsExample09"
+        aria-controls="navbarsExample09"
+        aria-expanded={!isNavCollapsed ? true : false}
         aria-label="Toggle navigation"
+        onClick={handleNavCollapse}
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/">
-              Home <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Experience">
-              Experience
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Education">
-              Education
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ContactMe">
-              Contact Me
-            </a>
-          </li>
-        </ul>
+
+      <div class={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}>
+        <a class="nav-link" href="/">
+          Home <span class="sr-only">(current)</span>
+        </a>
+
+        <a class="nav-link" href="/Experience">
+          Experience
+        </a>
+
+        <a class="nav-link" href="/Education">
+          Education
+        </a>
+        <a class="nav-link" href="/Projects">
+          Projects
+        </a>
+
+        <a class="nav-link" href="/ContactMe">
+          Contact Me
+        </a>
       </div>
     </nav>
   );
-}
+};
 
 export default Nav;

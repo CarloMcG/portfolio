@@ -76,6 +76,14 @@
     box-sizing: border-box;
 }
 
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: rgb(190, 189, 189);
+}
+
+
 
 
 @import "~bootstrap/scss/bootstrap.scss";
