@@ -24,7 +24,7 @@ function AboutMe() {
           color: "white",
         }}
       >
-        TelecomsCorp
+        About Me
       </h1>
     </Container>
   );
