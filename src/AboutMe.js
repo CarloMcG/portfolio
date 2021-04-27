@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import background from "./background.png";
 import Nav from "./Nav";
-import pdf from "./CV-CarloMcGinley.pdf";
 
 function AboutMe() {
   return (
@@ -33,19 +32,24 @@ function AboutMe() {
           verticalAlign: "middle",
         }}
       >
-        <h1>Hi! I'm Carlo</h1>
-        <p>I am a Final Year Computer Science Student at NUI Galway</p>
-        <p>
-          {" "}
-          I am currently seeking job oppertunities, to allow me to expand my
-          skillset after I graduate
-        </p>
-        <p>
-          I have a strong passion for software engineering, with experience in
-          working in software development on a professional, academic and
-          hobbyist level
-        </p>
-        <p> Feel Free to take a look around</p>
+        <div class="card text-white bg-dark mb-3">
+          <div class="card-body">
+            <h4 class="card-title">Hi, I'm Carlo</h4>
+            <p class="card-text">
+              I'm a Final Year Computer Science Student at NUI Galway
+            </p>
+            <p class="card-text">
+              I am currently seeking job oppertunities, to allow me to expand my
+              skillset after I graduate
+            </p>
+            <p class="card-text">
+              I have a strong passion for software engineering, with experience
+              in working in software development on a professional, academic and
+              hobbyist level
+            </p>
+            <p class="card-text">Feel Free to take a look around</p>
+          </div>
+        </div>
       </div>
     </Container>
   );
