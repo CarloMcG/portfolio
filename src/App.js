@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import AboutMe from "./AboutMe";
 import Education from "./Education";
@@ -9,13 +9,13 @@ import ContactMe from "./ContactMe";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Route exact path="/" component={AboutMe} />
       <Route exact path="/Education" component={Education} />
       <Route exact path="/Experience" component={WorkExperience} />
       <Route exact path="/Projects" component={Projects} />
       <Route exact path="/ContactMe" component={ContactMe} />
-    </div>
+    </Router>
   );
 }
 
