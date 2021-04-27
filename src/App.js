@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./theme.scss";
 
@@ -8,7 +8,10 @@ import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    document.title = "Carlo McGinley";
+  }, []);
   return (
     <Router>
       <Route exact path="/" component={AboutMe} />
@@ -18,6 +21,6 @@ function App() {
       <Route exact path="/ContactMe" component={ContactMe} />
     </Router>
   );
-}
+};
 
 export default App;
