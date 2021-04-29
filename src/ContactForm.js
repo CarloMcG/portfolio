@@ -19,7 +19,7 @@ function ContactForm() {
   }
   return (
     <Form onSubmit={handleSubmit}>
-      <div class="card text-white bg-dark mb-3">
+      <div class="card text-white bg-dark mb-3 ">
         <div class="card-body">
           <h4 class="card-title">Email Me</h4>
           <input
@@ -28,13 +28,28 @@ function ContactForm() {
             name="email"
             placeholder="Email"
             class="form-control form-fixer"
+            style={{
+              textAlign: "center",
+            }}
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <input
+            type="text"
+            name="_subject"
+            placeholder="Subject"
+            class="form-control form-fixer"
+            style={{
+              textAlign: "center",
+            }}
+          />
           <textarea
             id="message"
             name="message"
             placeholder="Message"
             class="form-control form-fixer"
+            style={{
+              textAlign: "center",
+            }}
           />
           <ValidationError
             prefix="Message"

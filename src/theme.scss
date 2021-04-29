@@ -22,7 +22,17 @@
 .linear {
     max-width: 100%;
 }
-
+.cForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+.contacter {
+    width: 600px;
+    
+}
 .card-group [class*='col-'] {
     float: none;
 }
@@ -86,6 +96,11 @@
 .socmed {
     color: white;
     text: white;
+}
+.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 

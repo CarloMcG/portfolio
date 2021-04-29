@@ -19,7 +19,15 @@ const Nav = (props) => {
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}>
+      <div
+        class={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+        style={{
+          color: "white",
+          justifyContent: "center",
+          textAlign: "center",
+          verticalAlign: "middle",
+        }}
+      >
         <a class="nav-link" href="/">
           Home <span class="sr-only">(current)</span>
         </a>
