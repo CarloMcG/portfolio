@@ -8,6 +8,14 @@ import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "GTM-66LQM5QVFE",
+};
+
+TagManager.initialize(tagManagerArgs);
+
 const App = () => {
   useEffect(() => {
     document.title = "Carlo McGinley";
