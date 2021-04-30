@@ -45,7 +45,7 @@ function AboutMe() {
                 my skillset after I graduate
               </p>
               <p class="card-text">
-                I have a strong passion for software engineering, with
+                I have a strong passion for software engineering, and a keen interest in cyber security, with
                 experience in working in software development on a professional,
                 academic and hobbyist level
               </p>
