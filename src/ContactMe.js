@@ -49,7 +49,7 @@ function ContactMe() {
         }}
         class=" row align-items-center"
       >
-        <div class=" col-lg-6">
+        <div class="footer col-lg-6">
           <div class="card text-white bg-dark mb-3">
             <div class="card-body">
               <h5 class="card-title">Social Media</h5>

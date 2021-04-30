@@ -2,8 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 
 import background from "./background.png";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+
 import Nav from "./Nav";
 
 function Projects() {
@@ -24,9 +23,16 @@ function Projects() {
           color: "white",
         }}
       ></h1>
-
-      <Row>
-        <Col>
+      <div
+        style={{
+          color: "white",
+          justifyContent: "center",
+          textAlign: "center",
+          verticalAlign: "middle",
+        }}
+        class=" row align-items-center"
+      >
+        <div class=" col-lg-6">
           <div class="card text-white bg-dark mb-3">
             <div class="card-body">
               <h5 class="card-title">Call Rating Engine</h5>
@@ -47,8 +53,19 @@ function Projects() {
               </a>
             </div>
           </div>
-        </Col>
-        <Col>
+        </div>
+      </div>
+
+      <div
+        style={{
+          color: "white",
+          justifyContent: "center",
+          textAlign: "center",
+          verticalAlign: "middle",
+        }}
+        class=" row align-items-center"
+      >
+        <div class=" col-lg-6">
           <div class="card text-white bg-dark mb-3">
             <div class="card-body">
               <h5 class="card-title">C Labs</h5>
@@ -79,10 +96,19 @@ function Projects() {
               </a>
             </div>
           </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
+        </div>
+      </div>
+
+      <div
+        style={{
+          color: "white",
+          justifyContent: "center",
+          textAlign: "center",
+          verticalAlign: "middle",
+        }}
+        class=" row align-items-center"
+      >
+        <div class=" col-lg-6">
           <div class="card text-white bg-dark mb-3">
             <div class="card-body">
               <h5 class="card-title">BT Young Scientist / SciFest 2015</h5>
@@ -112,9 +138,8 @@ function Projects() {
               </a>
             </div>
           </div>
-        </Col>
-        <Col></Col>
-      </Row>
+        </div>
+      </div>
     </Container>
   );
 }
