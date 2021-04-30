@@ -1,8 +1,15 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Form from "react-bootstrap/Form";
+import { useHistory } from "react-router-dom";
 
-function ContactForm() {
+const ContactForm = () => {
+  let history = useHistory();
+
+  async function refresh() {
+    history.go(0);
+  }
+
   const [state, handleSubmit] = useForm("mayaqnwn");
   if (state.succeeded) {
     return (
@@ -27,6 +34,9 @@ function ContactForm() {
                 In the mean time, feel free to contact me on any of the sites
                 linekd below
               </p>
+              <button onClick={refresh} class="btn btn-primary btn-lg active">
+                Send another email
+              </button>
             </div>
           </div>
         </div>
@@ -95,6 +105,6 @@ function ContactForm() {
       </div>
     </Form>
   );
-}
+};
 
 export default ContactForm;

@@ -2,16 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import background from "./background.png";
 import Nav from "./Nav";
-import { useHistory } from "react-router-dom";
 
-const AboutMe = () => {
-  let history = useHistory();
-
-  async function downloadCV() {
-    history.push(
-      "https://drive.google.com/file/d/1HGC1ZGmNmTFy0dWGtNQ7knZNU78uEqHX/view?usp=sharings"
-    );
-  }
+function AboutMe() {
   return (
     <Container
       fluid
@@ -59,7 +51,7 @@ const AboutMe = () => {
               </p>
               <p class="card-text">Feel Free to take a look around</p>
               <a
-                class="btn btn-primary"
+                class="btn btn-primary btn-lg active"
                 target="_blank"
                 href="https://drive.google.com/file/d/1HGC1ZGmNmTFy0dWGtNQ7knZNU78uEqHX/view?usp=sharing"
               >
@@ -71,6 +63,6 @@ const AboutMe = () => {
       </div>
     </Container>
   );
-};
+}
 
 export default AboutMe;
