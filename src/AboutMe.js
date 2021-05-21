@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import background from "./background.png";
-import CV from "./CV.pdf";
 import Nav from "./Nav";
 
 function AboutMe() {
@@ -46,16 +45,15 @@ function AboutMe() {
                 my skillset after I graduate
               </p>
               <p class="card-text">
-                I have a strong passion for software engineering, and a keen
-                interest in cyber security, with experience in working in
-                software development on a professional, academic and hobbyist
-                level
+                I have a strong passion for software engineering, and a keen interest in cyber security, with
+                experience in working in software development on a professional,
+                academic and hobbyist level
               </p>
               <p class="card-text">Feel Free to take a look around</p>
               <a
                 class="btn btn-primary btn-lg active"
                 target="_blank"
-                href={CV}
+                href="https://drive.google.com/file/d/1HGC1ZGmNmTFy0dWGtNQ7knZNU78uEqHX/view?usp=sharing"
               >
                 Download my CV here
               </a>
