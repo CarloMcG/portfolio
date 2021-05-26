@@ -17,6 +17,16 @@ function Education() {
       }}
     >
       <Nav />
+
+      <div class="card text-white bg-dark mb-3">
+        <div class="card-body text-lg-center">
+          <h4 class="card-title">
+            {" "}
+            An overview of all the modules I studied while pursuing a BSc in
+            Computer Science & Information Technology at NUI Galway
+          </h4>
+        </div>
+      </div>
       <div
         style={{
           color: "white",

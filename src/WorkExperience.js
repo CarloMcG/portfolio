@@ -39,20 +39,19 @@ function WorkExperience() {
           <div class="card text-white bg-dark mb-3">
             <div class="card-body">
               <h4 class="card-title">Software Developer Intern</h4>
-              <h5 class="card-subtitle mb-2 text-muted">
-                Openjaw Technologies
-              </h5>
-              <h6 class="card-subtitle mb-2 text-muted">
-                January 2020 - April 2020
-              </h6>
-              <p class="card-text">
-                • Developed frontend and backend software solutions as part of
-                an agile team working to create an AI chatbot for use within the
+              <h5 class="card-subtitle mb-2 text">Openjaw Technologies</h5>
+              <h6 class="card-subtitle mb-2 text">January 2020 - April 2020</h6>
+              <p class="card-text float-left">
+                • Developed frontend web pages using React, and backend RESTful
+                APIs for a customer service dashboard for use within the
                 aviation industry
               </p>
               <p class="card-text">
-                • Developed unit tests for Java using the Junit framework, as
-                well as implementing rigorous regression testing procedures
+                • Developed unit tests for Java using the Junit framework,
+                automated frontend tests using Selenium Web Driver,and
+                implemented rigorous regression testing procedures for both a
+                frontend dahsboard and a AI chat client that implements IBM
+                Watson
               </p>
               <p class="card-text">
                 • Participated in weekly planning meetings, and bi-weekly
