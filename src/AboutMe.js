@@ -54,7 +54,7 @@ function AboutMe() {
               <a
                 class="btn btn-primary btn-lg active"
                 target="_blank"
-                href="https://drive.google.com/file/d/1EEvIoQDitkV1i9_EYS5pF_v4NfgJg7h_/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YNJEiK79s-6HBx4CA5oax_tPm3mfuTvS/view?usp=sharing"
               >
                 Download my CV here
               </a>
