@@ -84,7 +84,7 @@ function Projects() {
               >
                 {" "}
                 The frontend was developed using React, and implements
-                Bootstrap. Stripe was also incorporated as a payment module to
+                Bootstrap. Paypal was also incorporated as a payment module to
                 allow customers to pay for calls.
               </p>
               <p>Note: This application is still in development</p>
