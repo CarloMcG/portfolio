@@ -87,7 +87,6 @@ function Projects() {
                 Bootstrap. Paypal was also incorporated as a payment module to
                 allow customers to pay for calls.
               </p>
-              <p>Note: This application is still in development</p>
               <a
                 href="https://github.com/CarloMcG/fyp-frontend"
                 class="btn btn-primary btn-lg active"
@@ -125,12 +124,26 @@ function Projects() {
               <h6 class="card-subtitle mb-2 text-muted">
                 Final Year Machine Learning Module
               </h6>
-              <p>
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 Implementations of K-Nearest-Neighbour and Support Vector
                 Machine Classification algorithms, developed using the
                 scikit-learn package for Python
               </p>
-              <p class="card-text">
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 Both of these classification algorithms aim to determine whether
                 a specific sample of beer is a stout, ale or lager, depending on
                 it's attributes
@@ -163,11 +176,25 @@ function Projects() {
               <h6 class="card-subtitle mb-2 text-muted">
                 Final Year Distributed Systems Module
               </h6>
-              <p class="card-text">
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 An implementation of a MapReduce function, that selects
                 individual words within a set of documents.{" "}
               </p>
-              <p>
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 This multithreaded function allows the user to specify the
                 number of lines of text read per Map thread, and the number of
                 mapped groups to be reduced per Reduce thread
@@ -253,16 +280,37 @@ function Projects() {
               <h6 class="card-subtitle mb-2 text-muted">
                 Scifest: First Place, Technology Category
               </h6>
-              <p class="card-text">
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 A number of Python scripts developed over the course of the
                 project.
               </p>
-              <p class="card-text">
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 The Goal of the project was to investigate the cybersecurity
                 awareness of 12-18 year olds, specifically in terms of the types
                 of passwords they used.
               </p>
-              <p class="card-text">
+              <p
+                style={{
+                  color: "white",
+                  justifyContent: "left",
+                  textAlign: "left",
+                  verticalAlign: "middle",
+                }}
+              >
                 The specific scripts linked below compare an input (e.g. a
                 sample password) against a list of the 10k most common passwords
                 and the Oxford English Dictionary. The third program gives the
