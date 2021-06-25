@@ -8,17 +8,13 @@ import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 
-import TagManager from "react-gtm-module";
-
-const tagManagerArgs = {
-  gtmId: "GTM-66LQM5QVFE",
-};
-
-TagManager.initialize(tagManagerArgs);
+import ReactGa from "react-ga";
 
 const App = () => {
   useEffect(() => {
     document.title = "Carlo McGinley";
+    ReactGa.initialize("G-0VD7BHBCG5");
+    ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
     <Router>
