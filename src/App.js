@@ -13,7 +13,7 @@ import ReactGa from "react-ga";
 const App = () => {
   useEffect(() => {
     document.title = "Carlo McGinley";
-    ReactGa.initialize("G-66LQM5QVFE");
+    ReactGa.initialize("G-44QNPY015X");
     ReactGa.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
