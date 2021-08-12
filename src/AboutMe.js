@@ -37,13 +37,7 @@ function AboutMe() {
           <div class="card text-white bg-dark mb-3">
             <div class="card-body">
               <h4 class="card-title">Hi, I'm Carlo</h4>
-              <p class="card-text">
-                I'm a Final Year Computer Science Student at NUI Galway
-              </p>
-              <p class="card-text">
-                I am currently seeking job oppertunities, to allow me to expand
-                my skillset after I graduate
-              </p>
+
               <p class="card-text">
                 I have a strong passion for software engineering, and a keen
                 interest in cyber security, with experience in working in
@@ -51,13 +45,6 @@ function AboutMe() {
                 level
               </p>
               <p class="card-text">Feel Free to take a look around</p>
-              <a
-                class="btn btn-primary btn-lg active"
-                target="_blank"
-                href="https://drive.google.com/file/d/1YNJEiK79s-6HBx4CA5oax_tPm3mfuTvS/view?usp=sharing"
-              >
-                Download my CV here
-              </a>
             </div>
           </div>
         </div>
