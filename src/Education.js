@@ -23,7 +23,8 @@ function Education() {
           <h4 class="card-title">
             {" "}
             An overview of all the modules I studied while pursuing a BSc in
-            Computer Science & Information Technology at NUI Galway
+            Computer Science & Information Technology at NUI Galway in which I
+            obtained a second-class honours degree, grade 2
           </h4>
         </div>
       </div>
@@ -218,7 +219,7 @@ function Education() {
             <h1></h1>
             <div class="card text-white bg-dark mb-3">
               <div class="card-body">
-                <h4 class="card-title"> Fourth Year: Predicted 2:1</h4>
+                <h4 class="card-title"> Fourth Year: 53.42%</h4>
 
                 <table class="table table-dark">
                   <thead>
@@ -230,43 +231,47 @@ function Education() {
                   <tbody>
                     <tr>
                       <td>Advanced Professional Skills</td>
-                      <td>TBC</td>
+                      <td>68%</td>
                     </tr>
                     <tr>
                       <td>Software Engineering III</td>
-                      <td>TBC</td>
+                      <td>53%</td>
                     </tr>
                     <tr>
                       <td>Information Retrieval</td>
-                      <td>TBC</td>
+                      <td>46%</td>
                     </tr>
                     <tr>
                       <td>Systems Modelling & Simulation</td>
-                      <td>TBC</td>
+                      <td>49%</td>
                     </tr>
                     <tr>
                       <td>Machine Learning</td>
-                      <td>TBC</td>
+                      <td>51%</td>
                     </tr>
                     <tr>
                       <td>Artifical Intelligence</td>
-                      <td>TBC</td>
+                      <td>51%</td>
                     </tr>
                     <tr>
                       <td>Real Time Systems</td>
-                      <td>TBC</td>
+                      <td>46%</td>
                     </tr>
                     <tr>
                       <td>Distributed Systems & Co-Operative Computing</td>
-                      <td>TBC</td>
+                      <td>47%</td>
                     </tr>
                     <tr>
                       <td>Cryptography</td>
-                      <td>TBC</td>
+                      <td>45%</td>
                     </tr>
                     <tr>
                       <td>Computer Security and Forensic Computing</td>
-                      <td>TBC</td>
+                      <td>61%</td>
+                    </tr>
+                    <tr>
+                      <td>Final Year Project</td>
+                      <td>62%</td>
                     </tr>
                   </tbody>
                 </table>
