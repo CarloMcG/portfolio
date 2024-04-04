@@ -32,7 +32,7 @@ const ContactForm = () => {
               </p>
               <p class="card-text">
                 In the mean time, feel free to contact me on any of the sites
-                linekd below
+                linked below
               </p>
               <button onClick={refresh} class="btn btn-primary btn-lg active">
                 Send another email
