@@ -1,56 +1,47 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import background from "./background.png";
+import { Grid, Column, Button } from "@carbon/react";
+import { LogoLinkedin, LogoGithub } from '@carbon/icons-react';
 import Nav from "./Nav";
 
 function AboutMe() {
   return (
-    <Container
-      fluid
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-      }}
-    >
-      <Nav />
-      <h1
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          color: "white",
-        }}
-      ></h1>
-      <div
-        style={{
-          color: "white",
-          justifyContent: "center",
-          textAlign: "center",
-          verticalAlign: "middle",
-        }}
-        class=" row align-items-center"
-      >
-        <div class=" col-lg-6">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-body">
-              <h4 class="card-title">Hi, I'm Carlo</h4>
-
-              <p class="card-text">
-                I have a strong passion for software engineering, and a keen
-                interest in cyber security, with experience in working in
-                software development on a professional, academic and hobbyist
-                level
-              </p>
-              <p class="card-text">Feel Free to take a look around</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Container>
+    <Grid>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+        <Nav />
+      </Column>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+        <Grid>
+          <Column md={8} lg={7} sm={4}>
+            <h1 className="bx--type-expressive-heading-01">Hi, I'm Carlo!</h1>
+          </Column>
+        </Grid>
+      </Column>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+        <Grid>
+          <Column md={6} lg={8} sm={4}>
+            <p className="bx--type-body-long-01">
+              I'm a software engineer with a strong background in backend development and a passion for cybersecurity, I focus on creating efficient, secure, and scalable solutions. Explore my previous projects and experience to see how I can bring value to your next project
+            </p>
+          </Column>
+          <Column md={4} lg={{ span: 4, offset: 10 }} sm={4}>
+            <h3>Connect with Me</h3>
+            <Grid>
+              <Column>
+                < Button kind="tertiary" renderIcon={LogoGithub} style={{ marginTop: '20px' }} />
+              </Column>
+              <Column>
+                < Button kind="tertiary" renderIcon={LogoLinkedin} style={{ marginTop: '20px' }} />
+              </Column>
+            </Grid>
+          </Column >
+          <Column md={8} lg={{ span: 1, offset: 2 }} sm={4} style={{ marginTop: '20px' }} >
+            <Button kind="tertiary" href="/CV-Carlo_McGinley.pdf" target="_blank" rel="noopener noreferrer">
+              Download my CV
+            </Button>
+          </Column>
+        </Grid >
+      </Column >
+    </Grid >
   );
 }
-
 export default AboutMe;

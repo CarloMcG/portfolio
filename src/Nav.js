@@ -1,53 +1,105 @@
-import React, { useState } from "react";
+import React from "react";
+import { useLocation } from "react-router-dom";
+import {
+  Header,
+  HeaderContainer,
+  HeaderMenuButton,
+  HeaderName,
+  HeaderNavigation,
+  HeaderMenuItem,
+  SideNav,
+  SideNavItems,
+  SideNavLink,
+} from "@carbon/react";
 
-const Nav = (props) => {
-  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+const Nav = () => {
+  const location = useLocation(); // Get the current URL path
 
-  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <button
-        class="custom-toggler navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarsExample09"
-        aria-controls="navbarsExample09"
-        aria-expanded={!isNavCollapsed ? true : false}
-        aria-label="Toggle navigation"
-        onClick={handleNavCollapse}
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div
-        class={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
-        style={{
-          color: "white",
-          justifyContent: "center",
-          textAlign: "center",
-          verticalAlign: "middle",
-        }}
-      >
-        <a class="nav-link" href="/">
-          Home <span class="sr-only">(current)</span>
-        </a>
-
-        <a class="nav-link" href="/Experience">
-          Experience
-        </a>
-
-        <a class="nav-link" href="/Education">
-          Education
-        </a>
-        <a class="nav-link" href="/Projects">
-          Projects
-        </a>
-
-        <a class="nav-link" href="/ContactMe">
-          Contact Me
-        </a>
-      </div>
-    </nav>
+    <HeaderContainer
+      render={({ isSideNavExpanded, onClickSideNavExpand }) => (
+        <>
+          <Header aria-label="Portfolio Navigation">
+            <HeaderMenuButton
+              aria-label="Open menu"
+              isActive={isSideNavExpanded}
+              onClick={onClickSideNavExpand}
+            />
+            <HeaderName href="/" prefix="Carlo McGinley"></HeaderName>
+            <HeaderNavigation aria-label="Portfolio Navigation">
+              <HeaderMenuItem
+                href="/"
+                isActive={location.pathname === "/"}
+              >
+                About Me
+              </HeaderMenuItem>
+              <HeaderMenuItem
+                href="/Experience"
+                isActive={location.pathname === "/Experience"}
+              >
+                Experience
+              </HeaderMenuItem>
+              <HeaderMenuItem
+                href="/Education"
+                isActive={location.pathname === "/Education"}
+              >
+                Education
+              </HeaderMenuItem>
+              <HeaderMenuItem
+                href="/Projects"
+                isActive={location.pathname === "/Projects"}
+              >
+                Projects
+              </HeaderMenuItem>
+              <HeaderMenuItem
+                href="/ContactMe"
+                isActive={location.pathname === "/ContactMe"}
+              >
+                Contact Me
+              </HeaderMenuItem>
+            </HeaderNavigation>
+          </Header>
+          <SideNav
+            isPersistent={false}
+            expanded={isSideNavExpanded}
+            aria-label="Side Navigation"
+          >
+            <SideNavItems>
+              <SideNavLink
+                href="/"
+                isActive={location.pathname === "/"}
+              >
+                About Me
+              </SideNavLink>
+              <SideNavLink
+                href="/Experience"
+                isActive={location.pathname === "/Experience"}
+              >
+                Experience
+              </SideNavLink>
+              <SideNavLink
+                href="/Education"
+                isActive={location.pathname === "/Education"}
+              >
+                Education
+              </SideNavLink>
+              <SideNavLink
+                href="/Projects"
+                isActive={location.pathname === "/Projects"}
+              >
+                Projects
+              </SideNavLink>
+              <SideNavLink
+                href="/ContactMe"
+                isActive={location.pathname === "/ContactMe"}
+              >
+                Contact Me
+              </SideNavLink>
+            </SideNavItems>
+          </SideNav>
+        </>
+      )}
+    />
   );
 };
 

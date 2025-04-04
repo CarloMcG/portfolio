@@ -1,92 +1,66 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import background from "./background.png";
+import { Grid, Column } from "@carbon/react";
 import Nav from "./Nav";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
 
 function WorkExperience() {
   return (
-    <Container
-      fluid
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-      }}
-    >
-      <Nav />
-      <h1
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          color: "white",
-        }}
-      ></h1>
-      <div
-        style={{
-          color: "white",
-          justifyContent: "center",
-          textAlign: "center",
-          verticalAlign: "middle",
-        }}
-        class=" row align-items-center"
-      >
-        <div class=" col-lg-6">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-body">
-              <h4 class="card-title">Software Developer Intern</h4>
-              <h5 class="card-subtitle mb-2 text">Openjaw Technologies</h5>
-              <h6 class="card-subtitle mb-2 text">January 2020 - April 2020</h6>
-              <p
-                class="card-text float-left"
-                style={{
-                  color: "white",
-                  justifyContent: "left",
-                  textAlign: "left",
-                  verticalAlign: "middle",
-                }}
-              >
-                • Developed frontend web pages using React, and backend RESTful
-                APIs for a customer service dashboard for use within the
-                aviation industry
+    <Grid>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+        <Nav />
+      </Column>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+        <Grid>
+          <Column md={8} lg={7} sm={4}>
+            <h1 className="bx--type-expressive-heading-01">Software Engineer</h1>
+            <h2 className="bx--type-expressive-heading-01">Openjaw Technologies, Galway</h2>
+            <h3 className="bx--type-expressive-heading-01">August 2021 - Present</h3>
+          </Column>
+        </Grid>
+      </Column>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+        <Grid>
+          <Column md={8} lg={10} sm={6}>
+            <p>
+              · Developed and maintained backend services and RESTful APIs as part of a booking offer and order
+              management system utilised by a global chain of hotels and resorts.</p>
+            <p>
+              · Actively participated in daily stand-up, weekly grooming, and regular regression meetings in order to
+              plan ahead and analyse the work being completed.
+            </p>
+            <p>
+              · Enforced stringent application security protocols and ensured PCI compliance to protect sensitive customer data and maintain regulatory standards.
+            </p>
+          </Column>
+        </Grid >
+        <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+          <Grid>
+            <Column md={8} lg={7} sm={4}>
+              <h1 className="bx--type-expressive-heading-01">Intern Software Developer</h1>
+              <h2 className="bx--type-expressive-heading-01">Openjaw Technologies, Galway</h2>
+              <h3 className="bx--type-expressive-heading-01">January 2020 - March 2020</h3>
+            </Column>
+          </Grid>
+        </Column>
+        <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+          <Grid>
+            <Column md={8} lg={10} sm={6}>
+              <p>
+                · Developed front-end web pages using React, and back-end RESTful APIs for a customer service dashboard for use within the aviation industry.</p>
+              <p>
+                · Created unit tests for Java using the JUnit framework, automated front-end tests using Selenium Web
+                Driver, and implemented rigorous regression testing procedures for both a front-end dashboard and an
+                AI chat client that implements IBM Watson.
+
               </p>
-              <p
-                class="card-text"
-                style={{
-                  color: "white",
-                  justifyContent: "left",
-                  textAlign: "left",
-                  verticalAlign: "middle",
-                }}
-              >
-                • Developed unit tests for Java using the Junit framework,
-                automated frontend tests using Selenium Web Driver,and
-                implemented rigorous regression testing procedures for both a
-                frontend dahsboard and a AI chat client that implements IBM
-                Watson
+              <p>
+                · Participated in weekly planning meetings, and bi-weekly retrospective meetings to plan the future
+                progression of the product, and solve problems as they appeared.
               </p>
-              <p
-                class="card-text"
-                style={{
-                  color: "white",
-                  justifyContent: "left",
-                  textAlign: "left",
-                  verticalAlign: "middle",
-                }}
-              >
-                • Participated in weekly planning meetings, and bi-weekly
-                retrospective meetings to plan the future progression of the
-                product, and solve problems as they appeared
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Container>
+            </Column>
+          </Grid >
+        </Column >
+      </Column >
+    </Grid >
   );
 }
 

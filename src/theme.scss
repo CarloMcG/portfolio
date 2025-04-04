@@ -1,116 +1,19 @@
+@use '@carbon/styles' as *;
+@use '@carbon/themes' as themes;
 
-
-$primary: #009B8B;
-.jumbotron {
-    background-color: transparent !important;
-
+:root {
+    // Set default theme (G100)
+    @include themes.theme($g100);
 }
 
-
-.navi {
-    background-color: #000000;
-    max-width: 375px;
-    font-size: 45px;
-
+[data-carbon-theme='g10'] {
+    @include themes.theme($g10);
 }
 
-.remove-all-margin-padding {
-    margin: 0 ! important;
-    padding: 0 ! important;
+[data-carbon-theme='g90'] {
+    @include themes.theme($g90);
 }
 
-.linear {
-    max-width: 100%;
+[data-carbon-theme='g100'] {
+    @include themes.theme($g100);
 }
-.cForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    text-align: center;
-}
-.contacter {
-    width: 600px;
-    
-}
-.card-group [class*='col-'] {
-    float: none;
-}
-
-.card-header {
-    width: 250px;
-    height: 50px;
-}
-
-.form-rounded {
-    border-radius: 1rem;
-}
-
-
-.inputItem {
-    padding-left: 50px;
-    padding-right: 2px;
-}
-
-.navbar {
-    padding-left: 0;
-
-}
-
-.result-message {
-    line-height: 22px;
-    font-size: 16px;
-}
-
-.result-message a {
-    color: rgb(89, 111, 214);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-#card-error {
-    color: rgb(105, 115, 134);
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 12px;
-    text-align: center;
-}
-
-#card-element {
-    border-radius: 4px 4px 0 0;
-    padding: 12px;
-    border: 1px solid rgba(50, 50, 93, 0.1);
-    max-height: 44px;
-    width: 100%;
-    background: white;
-    box-sizing: border-box;
-}
-
-.nav-link {
-    color: white;
-}
-.nav-link:hover {
-    color: rgb(190, 189, 189);
-}
-
-.socmed {
-    color: white;
-    text: white;
-}
-.form-control {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 20;
-}
-
-.footer{
-    position:absolute;
-    bottom:0;
-}
-
-
-.AccordionItemButton {
-    background-color: red;
-}
-
-@import "~bootstrap/scss/bootstrap.scss";

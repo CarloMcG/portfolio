@@ -1,30 +1,17 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import background from "./background.png";
-import Nav from "./Nav";
+import { Grid, Row, Column, Tile, Heading,  } from "@carbon/react";
 
 function Lol() {
   return (
-    <Container
-      fluid
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-      }}
-    >
-      <h1></h1>4{" "}
-      <a
-        class="btn btn-primary btn-lg active"
-        target="_blank"
-        href="https://drive.google.com/file/d/1gKWd7B-RtKQRn3Ktqw6gchOYznZa5Ick/view?usp=sharing"
-      >
-        Download here
-      </a>
-    </Container>
+    <Grid>
+      <Row>
+        <Column>
+          <Tile style={{ backgroundColor: "#303030", color: "white", padding: "20px" }}>
+            <Heading level={2}>LOL Section Content</Heading>
+          </Tile>
+        </Column>
+      </Row>
+    </Grid>
   );
 }
 

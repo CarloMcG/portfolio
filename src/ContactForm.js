@@ -1,6 +1,7 @@
 import React from "react";
+import { Grid, Column, Button, Form, Stack, TextInput, TextArea } from "@carbon/react";
+import { LogoLinkedin, LogoGithub } from '@carbon/icons-react';
 import { useForm, ValidationError } from "@formspree/react";
-import Form from "react-bootstrap/Form";
 import { useHistory } from "react-router-dom";
 
 const ContactForm = () => {
@@ -13,97 +14,78 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm("mayaqnwn");
   if (state.succeeded) {
     return (
-      <div
-        style={{
-          color: "white",
-          justifyContent: "center",
-          textAlign: "center",
-          verticalAlign: "middle",
-        }}
-        class=" row align-items-center"
-      >
-        <div class=" col-lg-6">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-body">
-              <h4 class="card-title">Thanks!</h4>
-              <p class="card-text">Email submitted successfully</p>
-              <p class="card-text">
+      <Grid>
+        <Column lg={{ span: 12, offset: 1 }} md={8} sm={4} style={{ marginTop: '160px' }}>
+          <Grid>
+            <Column md={8} lg={7} sm={4}>
+              <h1 className="bx--type-expressive-heading-01">Thanks!</h1>
+            </Column>
+          </Grid>
+        </Column>
+        <Column lg={{ span: 12, offset: 1 }} md={8} sm={4}>
+          <Grid>
+            <Column md={6} lg={8} sm={4}>
+              <p className="bx--type-body-long-01">
                 I look forward to replying to your email as soon as possible
               </p>
-              <p class="card-text">
-                In the mean time, feel free to contact me on any of the sites
-                linked below
-              </p>
-              <button onClick={refresh} class="btn btn-primary btn-lg active">
-                Send another email
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Column>
+          </Grid>
+        </Column>
+        <Column lg={{ span: 1, offset: 1 }} md={8} sm={4} style={{ marginTop: '80px' }}>
+          <Button onClick={refresh} kind="tertiary" style={{ marginTop: '20px' }}>
+            Send another email
+          </Button>
+        </Column>
+      </Grid>
     );
   }
   return (
-    <Form onSubmit={handleSubmit}>
-      <div class="card text-white bg-dark mb-3 ">
-        <div class="card-body">
-          <h4 class="card-title">Email Me</h4>
-          <div class="form-group">
-            <input
+    <Grid>
+
+      <Column lg={{ span: 8, offset: 4 }} md={8} sm={4} style={{ marginTop: '160px' }}>
+        <Form aria-label="Contact form" onSubmit={handleSubmit}>
+          <Stack gap={7}>
+
+            <TextInput
               id="email"
-              type="email"
               name="email"
-              placeholder="Email"
-              class="form-control form-fixer"
-              style={{
-                textAlign: "center",
-              }}
+              labelText="Email Address"
+              placeholder="Your Email"
+              required
             />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="text"
-              name="_subject"
-              placeholder="Subject"
-              class="form-control form-fixer"
-              style={{
-                textAlign: "center",
-              }}
-            />
-          </div>
-          <div class="form-group">
-            <textarea
+            <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+            <TextArea
               id="message"
               name="message"
-              placeholder="Message"
-              class="form-control form-fixer"
-              style={{
-                textAlign: "center",
-              }}
+              labelText="Message"
+              placeholder="Please enter your message"
+              rows={4}
+              required
             />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
-            />
-          </div>
-          <div class="form-group">
-            <button
-              type="submit"
-              disabled={state.submitting}
-              class="btn btn-primary btn-lg active"
-            >
+            <ValidationError prefix="Message" field="message" errors={state.errors} />
+
+            <Button kind="tertiary" type="submit" disabled={state.submitting}>
               Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </Form>
+            </Button>
+
+          </Stack>
+        </Form>
+        <Grid>
+          <Column md={4} lg={{ span: 4, offset: 10 }} sm={4} style={{ marginTop: '80px' }}>
+            <h3>Connect with Me</h3>
+            <Grid>
+              <Column>
+                < Button kind="tertiary" renderIcon={LogoGithub} style={{ marginTop: '20px' }} />
+              </Column>
+              <Column>
+                < Button kind="tertiary" renderIcon={LogoLinkedin} style={{ marginTop: '20px' }} />
+              </Column>
+            </Grid>
+          </Column >
+        </Grid >
+      </Column>
+    </Grid >
   );
 };
 
