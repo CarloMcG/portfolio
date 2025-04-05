@@ -297,30 +297,30 @@ function Education() {
       </Column>
 
       {/* Content Below */}
-      <Column lg={16} md={12} sm={8} style={{ marginTop: '80px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
         <Grid>
           {/* Main Title and Image side by side */}
-          <Column md={6} lg={8} sm={4}>
+          <Column md={16} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">MSc Software Design with Cyber Security</h1>
             <h2 className="bx--type-expressive-heading-01">Second Class Honours</h2>
             <h3 className="bx--type-expressive-heading-01">Technological University of the Shannon, Athlone</h3>
             <h4 className="bx--type-expressive-heading-01">September 2022 - May 2023</h4>
           </Column>
-          <Column md={6} lg={288} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
+          <Column md={8} lg={288} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
             <DataTable data={rows1} />
           </Column>
         </Grid >
       </Column >
-      <Column lg={16} md={12} sm={8} style={{ marginTop: '20px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
           {/* Main Title and Image side by side */}
-          <Column md={6} lg={8} sm={4}>
+          <Column md={8} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">BSc Computer Science & Information Technology</h1>
             <h2 className="bx--type-expressive-heading-01">Second Class Honours</h2>
             <h3 className="bx--type-expressive-heading-01">National University of Ireland, Galway</h3>
             <h4 className="bx--type-expressive-heading-01">September 2016 - May 2021</h4>
           </Column>
-          <Column md={6} lg={288} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
+          <Column md={8} lg={8} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
             <Tabs>
               <TabList contained>
                 <Tab>First Year</Tab>

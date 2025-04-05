@@ -4,17 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@carbon/styles/css/styles.min.css';
-import { BrowserRouter as Router } from "react-router-dom";
-import Analytics from "./Analytics";
-
-function Root() {
-  return (
-    <Router>
-      <Analytics />
-      <App />
-    </Router>
-  );
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

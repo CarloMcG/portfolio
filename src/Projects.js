@@ -22,7 +22,7 @@ function Projects() {
       </Column>
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
               Team-based research project undertaken as part of my postgraduate degree. This project involved
               training a GPT-3 algorithm using a sample set of spam and non-spam emails in order to allow it to
@@ -55,7 +55,7 @@ function Projects() {
       </Column>
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
               A Call rating engine developed as my Final Year Project while pursuing my undergraduate degree.
               Hosted using AWS and built using React, this application provides an interface for a VoIP company to
@@ -84,7 +84,7 @@ function Projects() {
       </Column>
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
               Implementations of K-Nearest-Neighbour and Support Vector Machine Classification algorithms, developed using the scikit-learn package for Python
 
@@ -110,7 +110,7 @@ function Projects() {
 
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
               An implementation of a MapReduce function, that selects individual words within a set of documents.
 
@@ -134,7 +134,7 @@ function Projects() {
       </Column>
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
               A number of programs written in C throughout the course of my first year Programming I Module</p>
             <p> - area_calc.c Calculates the area of a given shape</p>
@@ -160,7 +160,7 @@ function Projects() {
       </Column>
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
               A number of Python scripts developed over the course of the project.</p>
             <p> The Goal of the project was to investigate the cybersecurity awareness of 12-18 year olds, specifically in terms of the types of passwords they used.</p>

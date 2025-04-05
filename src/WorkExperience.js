@@ -19,7 +19,7 @@ function WorkExperience() {
       </Column>
       <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
         <Grid>
-          <Column md={8} lg={10} sm={6}>
+          <Column md={8} lg={10} sm={4}>
             <p>
               · Developed and maintained backend services and RESTful APIs as part of a booking offer and order
               management system utilised by a global chain of hotels and resorts.</p>
@@ -34,16 +34,16 @@ function WorkExperience() {
         </Grid >
         <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
           <Grid>
-            <Column md={8} lg={7} sm={4}>
+            <Column md={8} lg={10} sm={4}>
               <h1 className="bx--type-expressive-heading-01">Intern Software Developer</h1>
               <h2 className="bx--type-expressive-heading-01">Openjaw Technologies, Galway</h2>
               <h3 className="bx--type-expressive-heading-01">January 2020 - March 2020</h3>
             </Column>
           </Grid>
         </Column>
-        <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+        <Column lg={16} md={8} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
           <Grid>
-            <Column md={8} lg={10} sm={6}>
+            <Column md={8} lg={10} sm={4}>
               <p>
                 · Developed front-end web pages using React, and back-end RESTful APIs for a customer service dashboard for use within the aviation industry.</p>
               <p>
