@@ -35,9 +35,9 @@ function AboutMe() {
             </Grid>
           </Column >
           <Column md={8} lg={{ span: 1, offset: 2 }} sm={4} style={{ marginTop: '20px' }} >
-            <Button kind="tertiary" href="/CV-Carlo_McGinley.pdf" target="_blank" rel="noopener noreferrer">
-              Download my CV
-            </Button>
+            <a href="/CV-Carlo_McGinley.pdf" target="_blank" rel="noopener noreferrer">
+              <Button kind="tertiary">Download my CV</Button>
+            </a>
           </Column>
         </Grid >
       </Column >
