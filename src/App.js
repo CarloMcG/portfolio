@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, useLocation } from "react-router-dom";
 import '@carbon/styles/css/styles.min.css';
 import "./theme.scss";
 
@@ -9,16 +9,27 @@ import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
 
-import ReactGa from "react-ga";
+import ReactGA from "react-ga4";
+
+const TrackPageViews = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
+
+  return null;
+};
 
 const App = () => {
   useEffect(() => {
     document.title = "Carlo McGinley";
-    ReactGa.initialize("G-44QNPY015X");
-    ReactGa.pageview(window.location.pathname + window.location.search);
+    ReactGA.initialize("G-44QNPY015X"); // Your GA4 Measurement ID
   }, []);
+
   return (
     <Router>
+      <TrackPageViews />
       <Route exact path="/" component={AboutMe} />
       <Route exact path="/Education" component={Education} />
       <Route exact path="/Experience" component={WorkExperience} />
