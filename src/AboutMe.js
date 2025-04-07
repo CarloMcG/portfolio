@@ -46,13 +46,6 @@ function AboutMe() {
               </Column>
             </Grid>
           </Column >
-          <Column md={8} lg={{ span: 1, offset: 2 }} sm={4} style={{ marginTop: '20px'}}>
-            <a href="/CV-Carlo_McGinley.pdf" download rel="noopener noreferrer">
-              <Button kind="tertiary" renderIcon={Download}>
-                Download my CV
-              </Button>
-            </a>
-          </Column>
         </Grid >
       </Column >
     </Grid >
