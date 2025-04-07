@@ -250,26 +250,6 @@ function Education() {
     }
   ];
 
-  const headers = [
-    {
-      key: 'Module',
-      header: 'Module',
-    },
-    {
-      key: 'Grade',
-      header: 'Grade',
-    },
-  ];
-
-
-  function DemoContent({
-    children
-  }) {
-    return <div className="outside">
-      <div className="inside">{children}</div>
-    </div>;
-  }
-
   const DataTable = ({ data }) => (
     <Table>
       <TableHead>

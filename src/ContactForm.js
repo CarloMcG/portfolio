@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Column, Button, Form, Stack, TextInput, TextArea } from "@carbon/react";
-import { LogoLinkedin, LogoGithub } from '@carbon/icons-react';
+import { LogoLinkedin, LogoGithub, Send, SendAlt } from '@carbon/icons-react';
 import { useForm, ValidationError } from "@formspree/react";
 import { useHistory } from "react-router-dom";
 
@@ -32,7 +32,7 @@ const ContactForm = () => {
           </Grid>
         </Column>
         <Column lg={{ span: 1, offset: 1 }} md={8} sm={4} style={{ marginTop: '80px' }}>
-          <Button onClick={refresh} kind="tertiary" style={{ marginTop: '20px' }}>
+          <Button onClick={refresh} kind="tertiary" style={{ marginTop: '20px' }} renderIcon={SendAlt}>
             Send another email
           </Button>
         </Column>
@@ -65,23 +65,35 @@ const ContactForm = () => {
             />
             <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-            <Button kind="tertiary" type="submit" disabled={state.submitting}>
+            <Button kind="tertiary" type="submit" disabled={state.submitting} renderIcon={Send}>
               Submit
             </Button>
 
           </Stack>
         </Form>
         <Grid>
-          <Column md={4} lg={{ span: 4, offset: 10 }} sm={4} style={{ marginTop: '80px' }}>
+          <Column md={4} lg={{ span: 4, offset: 3 }} sm={4} style={{ marginTop: '80px' }}>
             <h3>Connect with Me</h3>
-            <Grid>
-              <Column>
-                < Button kind="tertiary" renderIcon={LogoGithub} style={{ marginTop: '20px' }} />
-              </Column>
-              <Column>
-                < Button kind="tertiary" renderIcon={LogoLinkedin} style={{ marginTop: '20px' }} />
-              </Column>
-            </Grid>
+                        <Grid>
+                          <Column>
+                            <a
+                              href="https://www.linkedin.com/in/carlo-mcginley"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <LogoLinkedin size={32} style={{ fill: 'white' }}/>
+                            </a>
+                          </Column>
+                          <Column>
+                            <a
+                              href="https://github.com/carlomcg"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <LogoGithub size={32}  style={{ fill: 'white' }}/>
+                            </a>
+                          </Column>
+                        </Grid>
           </Column >
         </Grid >
       </Column>

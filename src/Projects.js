@@ -1,26 +1,29 @@
 import React from "react";
-import { Grid, Column, Tag, Button } from "@carbon/react";
-import { LogoGithub, Http } from '@carbon/icons-react';
+import { Grid, Column, Tag } from "@carbon/react";
+import { LogoGithub, Http } from "@carbon/icons-react";
 import Nav from "./Nav";
 
 function Projects() {
   return (
     <Grid>
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Nav />
       </Column>
 
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+      {/* Project 1 */}
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Grid>
           <Column md={8} lg={8} sm={4}>
-            <h1 className="bx--type-expressive-heading-01">Utilising a Fine-Tuned GPT-3 model as a novel approach to detect phishing emails</h1>
+            <h1 className="bx--type-expressive-heading-01">
+              Utilising a Fine-Tuned GPT-3 model as a novel approach to detect phishing emails
+            </h1>
             <Tag className="some-class" type="white">
-              {'Python'}
+              {"Python"}
             </Tag>
           </Column>
         </Grid>
       </Column>
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "20px" }}>
         <Grid>
           <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
@@ -30,30 +33,29 @@ function Projects() {
               classification solutions, and the limitations that they pose.
             </p>
           </Column>
-        </Grid >
-      </Column >
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+        </Grid>
+      </Column>
+
+      {/* Project 2 */}
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Grid>
           <Column md={8} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">Call Rating Engine</h1>
-            <Tag className="some-class" type="white">
-              {'React'}
-            </Tag>
-            <Tag className="some-class" type="white">
-              {'AWS'}
-            </Tag>
-
-            <Tag className="some-class" type="white">
-              {'JavaScript'}
-            </Tag>
+            <Tag className="some-class" type="white">React</Tag>
+            <Tag className="some-class" type="white">AWS</Tag>
+            <Tag className="some-class" type="white">JavaScript</Tag>
           </Column>
-          <Column md={8} lg={8} sm={4}>
-            < Button kind="tertiary" renderIcon={LogoGithub} href="https://github.com/CarloMcG/fyp-frontend" target="_blank" rel="noopener noreferrer">Github</Button>
-            < Button kind="tertiary" renderIcon={Http} href="https://www.callratingsys.com/" target="_blank" rel="noopener noreferrer">Website</Button>
+          <Column md={8} lg={16} sm={4}>
+            <a href="https://github.com/CarloMcG/fyp-frontend" target="_blank" rel="noopener noreferrer" style={{ marginRight: '1rem' }}>
+              <LogoGithub size={24} color="white" />
+            </a>
+            <a href="https://www.callratingsys.com/" target="_blank" rel="noopener noreferrer">
+              <Http size={24} color="white" />
+            </a>
           </Column>
         </Grid>
       </Column>
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "20px" }}>
         <Grid>
           <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
@@ -64,111 +66,121 @@ function Projects() {
               a payment module.
             </p>
           </Column>
-        </Grid >
-      </Column >
+        </Grid>
+      </Column>
 
-      {/* Content Below */}
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+      {/* Project 3 */}
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Grid>
-          {/* Main Title and Image side by side */}
           <Column md={8} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">Machine Learning: Classification Algorithms</h1>
-            <Tag className="some-class" type="white">
-              {'Python'}
-            </Tag>
+            <Tag className="some-class" type="white">Python</Tag>
           </Column>
-          <Column md={8} lg={8} sm={4}>
-            < Button kind="tertiary" renderIcon={LogoGithub} href="https://github.com/CarloMcG/MachineLearning" target="_blank" rel="noopener noreferrer">Github</Button>
+         <Column md={8} lg={16} sm={4}>
+            <a href="https://github.com/CarloMcG/MachineLearning" target="_blank" rel="noopener noreferrer">
+              <LogoGithub size={24} color="white" />
+            </a>
           </Column>
         </Grid>
       </Column>
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "20px" }}>
         <Grid>
           <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
-              Implementations of K-Nearest-Neighbour and Support Vector Machine Classification algorithms, developed using the scikit-learn package for Python
-
-              Both of these classification algorithms aim to determine whether a specific sample of beer is a stout, ale or lager, depending on it's attributes.
+              Implementations of K-Nearest-Neighbour and Support Vector Machine Classification algorithms,
+              developed using the scikit-learn package for Python.
+              Both of these classification algorithms aim to determine whether a specific sample of beer is a stout,
+              ale or lager, depending on its attributes.
             </p>
           </Column>
-        </Grid >
-      </Column >
+        </Grid>
+      </Column>
 
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+      {/* Project 4 */}
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Grid>
           <Column md={8} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">Multi-threaded MapReduce Function</h1>
-            <Tag className="some-class" type="white">
-              {'Java'}
-            </Tag>
+            <Tag className="some-class" type="white">Java</Tag>
           </Column>
-          <Column md={8} lg={8} sm={4}>
-            < Button kind="tertiary" renderIcon={LogoGithub} href="https://github.com/CarloMcG/MultiThreadMapReduce" target="_blank" rel="noopener noreferrer">Github</Button>
+           <Column md={8} lg={16} sm={4}>
+            <a href="https://github.com/CarloMcG/MultiThreadMapReduce" target="_blank" rel="noopener noreferrer">
+              <LogoGithub size={24} color="white" />
+            </a>
+          </Column>
+        </Grid>
+      </Column>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "20px" }}>
+        <Grid>
+          <Column md={8} lg={10} sm={4}>
+            <p className="bx--type-body-long-01">
+              An implementation of a MapReduce function that selects individual words within a set of documents.
+              This multithreaded function allows the user to specify the number of lines of text read per Map thread,
+              and the number of mapped groups to be reduced per Reduce thread.
+            </p>
           </Column>
         </Grid>
       </Column>
 
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
-        <Grid>
-          <Column md={8} lg={10} sm={4}>
-            <p className="bx--type-body-long-01">
-              An implementation of a MapReduce function, that selects individual words within a set of documents.
-
-              This multithreaded function allows the user to specify the number of lines of text read per Map thread, and the number of mapped groups to be reduced per Reduce thread. </p>
-          </Column>
-        </Grid >
-      </Column >
-
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+      {/* Project 5 */}
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Grid>
           <Column md={8} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">C Labs</h1>
-            <Tag className="some-class" type="white">
-              {'C'}
-            </Tag>
+            <Tag className="some-class" type="white">C</Tag>
           </Column>
-          <Column md={8} lg={8} sm={4}>
-            < Button kind="tertiary" renderIcon={LogoGithub} href="https://github.com/CarloMcG/C-Assignments" target="_blank" rel="noopener noreferrer">Github</Button>
+           <Column md={8} lg={16} sm={4}>
+            <a href="https://github.com/CarloMcG/C-Assignments" target="_blank" rel="noopener noreferrer">
+              <LogoGithub size={24} color="white" />
+            </a>
           </Column>
         </Grid>
       </Column>
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "20px" }}>
         <Grid>
           <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
-              A number of programs written in C throughout the course of my first year Programming I Module</p>
+              A number of programs written in C throughout the course of my first year Programming I Module
+            </p>
             <p> - area_calc.c Calculates the area of a given shape</p>
             <p> - sales_info.c Generates information on an example sale</p>
-            <p> - score_analysis.c Analysises a number of given scores</p>
+            <p> - score_analysis.c Analyses a number of given scores</p>
             <p> - string_manipulation.c Manipulates a given string</p>
           </Column>
-        </Grid >
-      </Column >
+        </Grid>
+      </Column>
 
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '80px' }}>
+      {/* Project 6 */}
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "80px" }}>
         <Grid>
           <Column md={8} lg={8} sm={4}>
             <h1 className="bx--type-expressive-heading-01">BT Young Scientist / SciFest 2015</h1>
-            <Tag className="some-class" type="white">
-              {'Python'}
-            </Tag>
+            <Tag className="some-class" type="white">Python</Tag>
           </Column>
-          <Column md={8} lg={8} sm={4}>
-            < Button kind="tertiary" renderIcon={LogoGithub} href="https://github.com/CarloMcG/BTYSE-2015" target="_blank" rel="noopener noreferrer">Github</Button>
+          <Column md={8} lg={16} sm={4}>
+            <a href="https://github.com/CarloMcG/BTYSE-2015" target="_blank" rel="noopener noreferrer">
+              <LogoGithub size={24} color="white" />
+            </a>
           </Column>
         </Grid>
       </Column>
-      <Column lg={16} md={8} sm={4} style={{ marginTop: '20px', marginBottom: '20px' }}>
+      <Column lg={16} md={8} sm={4} style={{ marginTop: "20px", marginBottom: "20px" }}>
         <Grid>
           <Column md={8} lg={10} sm={4}>
             <p className="bx--type-body-long-01">
-              A number of Python scripts developed over the course of the project.</p>
-            <p> The Goal of the project was to investigate the cybersecurity awareness of 12-18 year olds, specifically in terms of the types of passwords they used.</p>
-            <p> The scripts linked below compare an input (e.g. a sample password) against a list of the 10k most common passwords and the Oxford English Dictionary. The third program gives the password a rating based on the number of uppercase letters, lowercase letters and numbers it contains</p>
+              A number of Python scripts developed over the course of the project.
+              The goal of the project was to investigate the cybersecurity awareness of 12–18 year olds,
+              specifically in terms of the types of passwords they used.
+            </p>
+            <p>
+              The scripts linked below compare an input (e.g., a sample password) against a list of the 10k most
+              common passwords and the Oxford English Dictionary. The third program gives the password a rating
+              based on the number of uppercase letters, lowercase letters and numbers it contains.
+            </p>
           </Column>
-        </Grid >
-      </Column >
-    </Grid >
+        </Grid>
+      </Column>
+    </Grid>
   );
 }
 

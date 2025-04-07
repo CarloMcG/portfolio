@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid, Row, Column, Heading } from "@carbon/react";
 import Nav from "./Nav";
 import ContactForm from "./ContactForm";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Column, Button } from "@carbon/react";
-import { LogoLinkedin, LogoGithub } from '@carbon/icons-react';
+import { LogoLinkedin, LogoGithub, Download } from '@carbon/icons-react';
 import Nav from "./Nav";
 
 function AboutMe() {
@@ -27,16 +27,28 @@ function AboutMe() {
             <h3>Connect with Me</h3>
             <Grid>
               <Column>
-                < Button kind="tertiary" renderIcon={LogoGithub} style={{ marginTop: '20px' }} />
+                <a
+                  href="https://www.linkedin.com/in/carlo-mcginley"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LogoLinkedin size={32} style={{ fill: 'white' }}/>
+                </a>
               </Column>
               <Column>
-                < Button kind="tertiary" renderIcon={LogoLinkedin} style={{ marginTop: '20px' }} />
+                <a
+                  href="https://github.com/carlomcg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LogoGithub size={32}  style={{ fill: 'white' }}/>
+                </a>
               </Column>
             </Grid>
           </Column >
           <Column md={8} lg={{ span: 1, offset: 2 }} sm={4} style={{ marginTop: '20px' }} >
             <a href="/CV-Carlo_McGinley.pdf" target="_blank" rel="noopener noreferrer">
-              <Button kind="tertiary">Download my CV</Button>
+              <Button kind="tertiary" renderIcon={Download}>Download my CV</Button>
             </a>
           </Column>
         </Grid >
